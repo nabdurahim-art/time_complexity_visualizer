@@ -33,7 +33,7 @@ The project contains six algorithms:
 Go to the project directory:
 
 ```bash
-cd ~/Git/AirBnB_clone/login
+
 
 Create a virtual environment:
 
