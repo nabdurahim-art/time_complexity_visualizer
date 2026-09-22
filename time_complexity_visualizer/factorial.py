@@ -4,6 +4,9 @@ import time
 import base64
 import os
 
+from stack import Stack
+from queue import Queue
+
 import matplotlib
 matplotlib.use("Agg")
 
@@ -84,6 +87,59 @@ def selection_sort(n):
             numbers[i]
         )    
 
+
+def stack_push(n):
+    stack = Stack()
+
+    for i in range(n):
+        stack.push(i)
+
+
+def stack_pop(n):
+    stack = Stack()
+
+    for i in range(n):
+        stack.push(i)
+
+    for i in range(n):
+        stack.pop()
+
+
+def stack_peek(n):
+    stack = Stack()
+
+    for i in range(n):
+        stack.push(i)
+
+    for i in range(n):
+        stack.peek()
+
+def queue_enqueue(n):
+    queue = Queue()
+
+    for i in range(n):
+        queue.enqueue(i)
+
+
+def queue_dequeue(n):
+    queue = Queue()
+
+    for i in range(n):
+        queue.enqueue(i)
+
+    for i in range(n):
+        queue.dequeue()
+
+
+def queue_peek(n):
+    queue = Queue()
+
+    for i in range(n):
+        queue.enqueue(i)
+
+    for i in range(n):
+        queue.peek()
+
 # -------------------------
 # Algorithm dictionary
 # -------------------------
@@ -94,7 +150,15 @@ algorithms = {
     "binary_search": binary_search,
     "nested_loops": nested_loops,
     "insertion_sort": insertion_sort,
-    "selection_sort": selection_sort
+    "selection_sort": selection_sort,
+
+    "stack_push": stack_push,
+    "stack_pop": stack_pop,
+    "stack_peek": stack_peek,
+
+    "queue_enqueue": queue_enqueue,
+    "queue_dequeue": queue_dequeue,
+    "queue_peek": queue_peek
 }
 
 
